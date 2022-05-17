@@ -1,0 +1,9 @@
+<div class="form-container">
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <h1>Edit your listing</h1>
+      <%= render 'form', item: @item %>
+      <%= link_to "Cancel", item_path(@item) %>
+    </div>
+  </div>
+</div>

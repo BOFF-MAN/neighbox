@@ -1,0 +1,17 @@
+<h1>Your neighbours items</h1>
+
+<div class="cards">
+  <%= @items.each do |item| %>
+    <div class="card-item">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+      <div class="card-item-infos">
+        <div>
+          <h2><%= item.name %></h2>
+          <p><%= item.category %></p>
+        </div>
+        <h2 class="card-item-pricing">Expires:<%= item.expiry %>days</h2>
+        <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-item-user avatar-bordered" />
+      </div>
+    </div>
+  <% end %>
+</div>
